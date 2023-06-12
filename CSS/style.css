@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif ;
+}
+body{
+    background: #e9e9e9;
+    
+}
+.navbar{
+    box-shadow: 0 0 10px black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.navbar{
+    background: #434343;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+}
+.navbar ul{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.logo{
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 25px;
+    flex: 1;
+    text-align: left;
+}
+
+ul li{
+    margin: 10px;
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+#homePage{
+    background: #dadada;
+    height: 90vh;
+    display: flex;
+}
+.primary-child1,.primary-child2{
+    flex: 1;
+}
+.primary-child1{
+    padding: 100px 0 0 50px;
+    text-align: left;
+}
+.medText, .botDoc{
+    font-family: calibri;
+    font-size: 50px;
+    font-weight: 100;
+    margin: 0 0 50px 0;
+}
+.botDoc{
+    color: rgb(65, 172, 243);
+}
+.pry-text{
+    font-family: calibri;
+    font-size: 22px;
+    font-weight: normal;
+}
+.pry-text2{
+    font-family: calibri;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.primary-child1 button{
+    background: #3886ec;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    margin: 50px 0 10px 0;
+}
+.primary-child1 button:hover{
+    background: #143f77;   
+}
+.medkits{
+    margin: 50px 0 0 0;
+    background: url(/medkit.png);
+    height: 80vh;
+    background-repeat: no-repeat;
+}
+.primary-child2{
+    background: #fff;
+}
+.pageHeading{
+    color: #3886ec;
+    font-family: calibri;
+    font-weight: 100;
+    font-size: 50px;
+    text-align: center;
+    margin: 50px 0;
+}
+.hr{
+    width: 40%;
+    margin:10px  auto;
+    height: 2px;
+    background: #000;
+}
+.cardParent{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    /* height: 400px; */
+    width: 300px ;
+    margin: 10px 50px;
+    box-shadow: 0 0 5px black;
+    background: #fff;
+    padding: 20px 0;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: all .5s ease-in-out;
+}
+.num{
+    font-size: 60px;
+    text-align: center;
+    margin: 10px 0;
+    font-family: sans-serif;
+    color: #122c5c;
+}
+.num1{
+    color:  #122c5c;
+
+}
+.num2{
+color: red;
+}
+.num3{
+color: green;
+}
+.icon{
+    height: 150px;
+    width: 150px;
+    /* background: #122c5c; */
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 8px 2px black  ;
+}
+.iconOne{
+    background: #122c5c;
+
+}
+.iconTwo{
+    background: red;
+}
+.iconThree{
+
+    background: green;
+}
+.icon .fa{
+    position: absolute;
+    top: 27%;
+    left: 27%;
+    font-size: 70px;
+    color: #fff;
+}
+.label{
+    font-size: 20px;
+    margin: 20px 0;
+}
+.createAccount  .label{
+    color:  #122c5c;
+}
+.symptoms .label{
+    color: red;
+}
+.medAdvice .label{
+    color: green;
+}
+.cardParent > a{
+    text-decoration: none;
+}
+footer{
+    background: #434343;
+    margin: 20px 0 0;
+    box-shadow: 0 0 5px 1px black;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+footer button{
+    padding: 10px;
+    background: #c5c5c5;
+    border: none;
+    font-size: 17px;
+    margin: 0 0 10px ;
+}
+
+
+
+.navbar-toggle{
+    /* color:#66fcf1; */
+    display: none;
+    font-size: 25px;
+    transition: all .4s;
+}
+.navbar li{
+    list-style-type: none;
+    /* padding: .5rem; */
+}
+
+@media screen and (max-width:600px){
+    .navbar a{
+        /* padding:.5rem 12rem; */
+    }
+    .navbar ul{
+        flex-wrap: wrap;
+    }
+    .navbar-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    .active{
+        display: block;
+    }
+    .medkits{
+        display: none;
+    }
+    .primary-child1{
+        flex: 2;
+    }
+}

@@ -1,0 +1,148 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background: #fff !important;
+}
+.navbar-toggle{
+    display: none;
+}
+.navbar{
+    background: #171922;
+    box-shadow: 0 0 10px black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.navbar{
+    background: #434343;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+}
+.navbar ul{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.logo{
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 25px;
+    flex: 1;
+}
+.navbar > a{
+    text-decoration: none !important;
+}
+a .logo {
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 25px;
+    color: #fff;
+}
+.links ul{
+    display: flex;
+}
+ul li{
+    margin: 10px;
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family:sans-serif;
+}
+.form{
+    box-shadow: 0 0 5px black;
+    margin: 10px;
+    padding: 20px 30px;
+}
+.form h2{
+    text-align: center;
+    font-family: calibri;
+    font-size: 35px;
+    font-weight: normal;
+}
+.form .hr{
+    margin: 20px 0;
+
+}
+.form input{
+    height: 25px;
+    padding: 15px;
+}
+.form button{
+    padding: 7px 12px;
+    font-size: 18px;
+    background: #0082fc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.form button:hover{
+    background: #044a8b;
+}
+.formWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 15px;
+}
+#signUp{
+    flex: 2;
+    margin: 20px;
+}
+#login{
+    flex: 1;
+    margin: 20px;
+}
+.form label{
+    font-size: 20px;
+    font-family: calibri;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 0;
+}
+footer{
+    background: #434343;
+    margin: 20px 0 0;
+    box-shadow: 0 0 5px 1px black;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+footer button{
+    padding: 10px;
+    background: #c5c5c5;
+    border: none;
+    font-size: 17px;
+    margin: 0 0 10px ;
+}
+
+
+
+
+@media screen and (max-width:600px){
+    .navbar a{
+        /* padding:.5rem 12rem; */
+    }
+    .navbar ul{
+        flex-wrap: wrap;
+    }
+    .navbar-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    .active{
+        display: block;
+    }
+}
